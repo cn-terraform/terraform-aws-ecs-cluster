@@ -12,7 +12,7 @@ Check valid versions on:
 
         module "ecs-cluster": 
             source              = "jnonino/ecs-cluster/aws"
-            version             = "1.0.0"
+            version             = "1.0.1"
             name_preffix        = var.name_preffix
             profile             = var.profile
             region              = var.region
@@ -26,6 +26,7 @@ Check valid versions on:
 
 ## Output values
 
+* aws_ecs_cluster_cluster_name: The name of the cluster.
 * aws_ecs_cluster_cluster_id: The Amazon ID that identifies the cluster.
 * aws_ecs_cluster_cluster_arn: The Amazon Resource Name (ARN) that identifies the cluster.
 
