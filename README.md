@@ -2,7 +2,7 @@
 
 This Terraform module creates an AWS ECS cluster.
 
-
+[![CircleCI](https://circleci.com/gh/jnonino/terraform-aws-ecs-cluster/tree/master.svg?style=svg)](https://circleci.com/gh/jnonino/terraform-aws-ecs-cluster/tree/master)
 
 ## Usage
 
