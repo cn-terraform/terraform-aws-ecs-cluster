@@ -11,11 +11,11 @@ Check valid versions on:
 * Terraform Module Registry: <https://registry.terraform.io/modules/jnonino/ecs-cluster/aws>
 
         module "ecs-cluster" {
-            source              = "jnonino/ecs-cluster/aws"
-            version             = "1.0.1"
-            name_preffix        = var.name_preffix
-            profile             = var.profile
-            region              = var.region
+            source  = "jnonino/ecs-cluster/aws"
+            version = "1.0.1"
+            name    = var.name_preffix
+            profile = var.profile
+            region  = var.region
         }
 
 ## Input values
