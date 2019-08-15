@@ -10,7 +10,7 @@ Check valid versions on:
 * Github Releases: <https://github.com/jnonino/terraform-aws-ecs-cluster/releases>
 * Terraform Module Registry: <https://registry.terraform.io/modules/jnonino/ecs-cluster/aws>
 
-        module "ecs-cluster": 
+        module "ecs-cluster" {
             source              = "jnonino/ecs-cluster/aws"
             version             = "1.0.1"
             name_preffix        = var.name_preffix
