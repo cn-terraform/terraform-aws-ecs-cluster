@@ -3,6 +3,11 @@
 This Terraform module creates an AWS ECS cluster.
 
 [![CircleCI](https://circleci.com/gh/jnonino/terraform-aws-ecs-cluster/tree/master.svg?style=svg)](https://circleci.com/gh/jnonino/terraform-aws-ecs-cluster/tree/master)
+[![](https://img.shields.io/github/license/jnonino/terraform-aws-ci-cd-system)](https://github.com/jnonino/terraform-aws-ci-cd-system)
+[![](https://img.shields.io/github/issues/jnonino/terraform-aws-ci-cd-system)](https://github.com/jnonino/terraform-aws-ci-cd-system)
+[![](https://img.shields.io/github/issues-closed/jnonino/terraform-aws-ci-cd-system)](https://github.com/jnonino/terraform-aws-ci-cd-system)
+[![](https://img.shields.io/github/languages/code-size/jnonino/terraform-aws-ci-cd-system)](https://github.com/jnonino/terraform-aws-ci-cd-system)
+[![](https://img.shields.io/github/repo-size/jnonino/terraform-aws-ci-cd-system)](https://github.com/jnonino/terraform-aws-ci-cd-system)
 
 ## Usage
 
