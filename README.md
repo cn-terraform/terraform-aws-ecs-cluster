@@ -2,22 +2,22 @@
 
 This Terraform module creates an AWS ECS cluster.
 
-[![CircleCI](https://circleci.com/gh/jnonino/terraform-aws-ecs-cluster/tree/master.svg?style=svg)](https://circleci.com/gh/jnonino/terraform-aws-ecs-cluster/tree/master)
-[![](https://img.shields.io/github/license/jnonino/terraform-aws-ecs-cluster)](https://github.com/jnonino/terraform-aws-ecs-cluster)
-[![](https://img.shields.io/github/issues/jnonino/terraform-aws-ecs-cluster)](https://github.com/jnonino/terraform-aws-ecs-cluster)
-[![](https://img.shields.io/github/issues-closed/jnonino/terraform-aws-ecs-cluster)](https://github.com/jnonino/terraform-aws-ecs-cluster)
-[![](https://img.shields.io/github/languages/code-size/jnonino/terraform-aws-ecs-cluster)](https://github.com/jnonino/terraform-aws-ecs-cluster)
-[![](https://img.shields.io/github/repo-size/jnonino/terraform-aws-ecs-cluster)](https://github.com/jnonino/terraform-aws-ecs-cluster)
+[![CircleCI](https://circleci.com/gh/cn-terraform/terraform-aws-ecs-cluster/tree/master.svg?style=svg)](https://circleci.com/gh/cn-terraform/terraform-aws-ecs-cluster/tree/master)
+[![](https://img.shields.io/github/license/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
+[![](https://img.shields.io/github/issues/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
+[![](https://img.shields.io/github/issues-closed/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
+[![](https://img.shields.io/github/languages/code-size/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
+[![](https://img.shields.io/github/repo-size/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
 
 ## Usage
 
 Check valid versions on:
-* Github Releases: <https://github.com/jnonino/terraform-aws-ecs-cluster/releases>
-* Terraform Module Registry: <https://registry.terraform.io/modules/jnonino/ecs-cluster/aws>
+* Github Releases: <https://github.com/cn-terraform/terraform-aws-ecs-cluster/releases>
+* Terraform Module Registry: <https://registry.terraform.io/modules/cn-terraform/ecs-cluster/aws>
 
         module "ecs-cluster" {
-            source  = "jnonino/ecs-cluster/aws"
-            version = "1.0.1"
+            source  = "cn-terraform/ecs-cluster/aws"
+            version = "1.0.2"
             name    = var.name_preffix
             profile = var.profile
             region  = var.region
