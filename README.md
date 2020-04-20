@@ -17,7 +17,7 @@ Check valid versions on:
 
         module "ecs-cluster" {
             source  = "cn-terraform/ecs-cluster/aws"
-            version = "1.0.2"
+            version = "1.0.3"
             name    = var.name_preffix
             profile = var.profile
             region  = var.region
