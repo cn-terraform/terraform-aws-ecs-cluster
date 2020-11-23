@@ -2,7 +2,7 @@
 
 This Terraform module creates an AWS ECS cluster.
 
-[![CircleCI](https://circleci.com/gh/cn-terraform/terraform-aws-ecs-cluster.svg?style=svg)](https://circleci.com/gh/cn-terraform/terraform-aws-ecs-cluster)
+[![](https://github.com/cn-terraform/terraform-aws-ecs-cluster/workflows/terraform/badge.svg)](https://github.com/cn-terraform/terraform-aws-ecs-cluster/actions?query=workflow%3Aterraform)
 [![](https://img.shields.io/github/license/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
 [![](https://img.shields.io/github/issues/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
 [![](https://img.shields.io/github/issues-closed/cn-terraform/terraform-aws-ecs-cluster)](https://github.com/cn-terraform/terraform-aws-ecs-cluster)
