@@ -13,5 +13,6 @@ variable "tags" {
 
 variable "containerInsights" {
   description = "Enables container insights if true"
-  type = bool
+  type        = bool
+  default     = false
 }
