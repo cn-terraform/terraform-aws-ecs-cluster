@@ -10,3 +10,9 @@ variable "tags" {
   default     = {}
   description = "Resource tags"
 }
+
+variable "containerInsights" {
+  description = "Enables container insights if true"
+  type        = bool
+  default     = false
+}
