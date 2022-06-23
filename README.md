@@ -57,6 +57,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_containerInsights"></a> [containerInsights](#input\_containerInsights) | Enables container insights if true | `bool` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the cluster (up to 255 letters, numbers, hyphens, and underscores) | `any` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Resource tags | `map(string)` | `{}` | no |
 
