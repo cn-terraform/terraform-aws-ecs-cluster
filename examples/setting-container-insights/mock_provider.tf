@@ -1,9 +1,9 @@
 terraform {
-  required_version = ">= 0.13"
+  required_version = ">= 1.5.5"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 4"
+      version = "~>6"
     }
   }
 }
@@ -15,4 +15,10 @@ provider "aws" {
   skip_metadata_api_check     = true
   access_key                  = "mock_access_key"
   secret_key                  = "mock_secret_key"
+
+  default_tags {
+    tags = {
+      test-default-tag = "test-value"
+    }
+  }
 }

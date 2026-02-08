@@ -1,8 +1,9 @@
-#------------------------------------------------------------------------------
-# ECS CLUSTER
-#------------------------------------------------------------------------------
+#############
+# ECS Cluster
+#############
 variable "name" {
-  description = "(Required) Name of the cluster (up to 255 letters, numbers, hyphens, and underscores)."
+  description = "(Required) Name of the cluster (up to 255 letters, numbers, hyphens, and underscores)"
+  type        = string
 }
 
 variable "configuration" {
@@ -47,8 +48,8 @@ variable "service_connect_defaults" {
   default = null
 }
 
-variable "tags" {
+variable "additional_tags" {
   type        = map(string)
   default     = {}
-  description = "Resource tags"
+  description = "(Optional) Additional tags to add to resources. These will be merged with the default tags added by the module. If configured with a provider default_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level."
 }
