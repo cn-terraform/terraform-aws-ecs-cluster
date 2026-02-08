@@ -1,15 +1,19 @@
 resource "aws_kms_key" "example" {
   description             = "example"
   deletion_window_in_days = 7
+  enable_key_rotation     = true
 }
 
+# trivy:ignore:AWS-0017 (LOW): Log group is not encrypted.
 resource "aws_cloudwatch_log_group" "example" {
   name = "example"
 }
 
+# trivy:ignore:AWS-0034 (LOW): Cluster does not have container insights enabled.
 module "cluster" {
-  source = "../../"
-  name   = "test-cluster"
+  source          = "../../"
+  name            = var.cluster_name
+  additional_tags = var.additional_tags
 
   configuration = {
     execute_command_configuration = {

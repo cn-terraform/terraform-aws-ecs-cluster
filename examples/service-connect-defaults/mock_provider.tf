@@ -15,4 +15,10 @@ provider "aws" {
   skip_metadata_api_check     = true
   access_key                  = "mock_access_key"
   secret_key                  = "mock_secret_key"
+
+  default_tags {
+    tags = {
+      test-default-tag = "test-value"
+    }
+  }
 }

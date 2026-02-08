@@ -1,9 +1,8 @@
-#------------------------------------------------------------------------------
-# ECS CLUSTER
-#------------------------------------------------------------------------------
+#############
+# ECS Cluster
+#############
 resource "aws_ecs_cluster" "cluster" {
   name = var.name
-  tags = var.tags
 
   dynamic "configuration" {
     for_each = toset(var.configuration != null ? [var.configuration] : [])
@@ -42,4 +41,11 @@ resource "aws_ecs_cluster" "cluster" {
       value = "enabled"
     }
   }
+
+  tags = merge(
+    var.additional_tags,
+    {
+      Name = var.name
+    }
+  )
 }
