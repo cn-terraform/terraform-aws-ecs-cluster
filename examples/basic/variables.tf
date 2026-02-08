@@ -3,3 +3,11 @@ variable "cluster_name" {
   type        = string
   default     = "test-cluster"
 }
+
+variable "additional_tags" {
+  description = "Additional tags to add to the resources"
+  type        = map(string)
+  default = {
+    test-additional-tag = "test-value"
+  }
+}
