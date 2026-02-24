@@ -6,7 +6,7 @@ resource "aws_kms_key" "example" {
 
 module "logs-s3-bucket" {
   source  = "cn-terraform/logs-s3-bucket/aws"
-  version = "2.0.0"
+  version = "2.0.1"
 
   bucket_name = "example-logs-bucket"
   log_delivery_principals = [
