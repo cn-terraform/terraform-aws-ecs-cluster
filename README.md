@@ -37,15 +37,15 @@ pre-commit run --all-files
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~>6 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.33.0 |
+| ---- | ------- |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~>6 |
 
 ## Modules
 
@@ -54,13 +54,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_ecs_cluster.cluster](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_cluster) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_additional_tags"></a> [additional\_tags](#input\_additional\_tags) | (Optional) Additional tags to add to resources. These will be merged with the default tags added by the module. If configured with a provider default\_tags configuration block present, tags with matching keys will overwrite those defined at the provider-level. | `map(string)` | `{}` | no |
 | <a name="input_configuration"></a> [configuration](#input\_configuration) | (Optional) The execute command configuration for the cluster. | <pre>object({<br/>    # The details of the execute command configuration.<br/>    execute_command_configuration = object({<br/>      # The AWS Key Management Service key ID to encrypt the data between the local client and the container.<br/>      kms_key_id = optional(string)<br/>      # The log configuration for the results of the execute command actions Required when logging is OVERRIDE.<br/>      log_configuration = object({<br/>        # Whether or not to enable encryption on the CloudWatch logs. If not specified, encryption will be disabled.<br/>        cloud_watch_encryption_enabled = optional(bool)<br/>        # The name of the CloudWatch log group to send logs to.<br/>        cloud_watch_log_group_name = optional(string)<br/>        # The name of the S3 bucket to send logs to.<br/>        s3_bucket_name = optional(string)<br/>        # Whether or not to enable encryption on the logs sent to S3. If not specified, encryption will be disabled.<br/>        s3_bucket_encryption_enabled = optional(bool)<br/>        # An optional folder in the S3 bucket to place logs in.<br/>        s3_key_prefix = optional(string)<br/>      })<br/>      # The log setting to use for redirecting logs for your execute command results. Valid values are NONE, DEFAULT, and OVERRIDE.<br/>      logging = optional(string)<br/>    })<br/>  })</pre> | `null` | no |
 | <a name="input_containerInsights"></a> [containerInsights](#input\_containerInsights) | (Optional) Enables container insights if true | `bool` | `false` | no |
@@ -70,6 +70,6 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_ecs_cluster"></a> [ecs\_cluster](#output\_ecs\_cluster) | Values from the created ECS Cluster. |
 <!-- END_TF_DOCS -->
